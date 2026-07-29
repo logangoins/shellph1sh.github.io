@@ -1,4 +1,4 @@
-Logan Goins is an Operator on the SpecterOps Adversary Simulation team serving as a Consultant, where he executes and leads Adversary Simulation exercises for SpecterOps clients. His published research focuses on Active Directory and operationalizing offensive security capability, and is the author of a variety of offensive identity driven tools including SOAPy, SharpSuccessor, and others.
+Logan Goins is an Consultant on the [SpecterOps Adversary Simulation team](https://specterops.io/services/#red-team-engagements), where he leads teams of operators and executes Adversary Simulation exercises for SpecterOps clients. His published research focuses on Active Directory, identity attack paths, and operationalizing offensive security capability. He is the author of a variety of offensive identity driven tools including SOAPy, SharpSuccessor, and others.
 
 ---
 
@@ -19,6 +19,7 @@ A summary of his security research, capability/tradecraft development, community
   - [Cable](https://github.com/logangoins/Cable), .NET post-exploitation toolkit for Active Directory reconnaissance and exploitation. (Nov 2024)
   - [SOAPy](https://github.com/xforcered/SOAPy), Proof of Concept (PoC) Python tool for conducting offensive interaction with Active Directory Web Services (ADWS) from Linux hosts. (Aug 2024)
 - **Major Blogs:**
+  - [There and Back Again: An Operators Guide on NTLM Relaying Egress](https://specterops.io/blog/2026/07/15/there-and-back-again-an-operators-guide-on-ntlm-relaying-egress/) (July 2026)
   - [Wait, Why is my WebClient Started? - SCCM Hierarchy Takeover via NTLM Relay to LDAP](https://specterops.io/blog/2026/01/14/wait-why-is-my-webclient-started-sccm-hierarchy-takeover-via-ntlm-relay-to-ldap/) (Jan 2026)
   - [The (Near) Return of the King: Account Takeover Using the BadSuccessor Technique](https://specterops.io/blog/2025/10/20/the-near-return-of-the-king-account-takeover-using-the-badsuccessor-technique/) (Oct 2025)
   - [Operating Outside the Box: NTLM Relaying Low-Privilege HTTP Auth to LDAP](https://specterops.io/blog/2025/08/22/operating-outside-the-box-ntlm-relaying-low-privilege-http-auth-to-ldap/) (Aug 2025)
